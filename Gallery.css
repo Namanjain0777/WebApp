@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+body {
+    background-color: #282c34; /* Dark background color */
+    font-family: Arial, sans-serif; /* Font family */
+}
+
+.navbar {
+    background-color: #4CAF50; /* Background color of the nav bar */
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    color: #fff; /* Text color */
+    font-size: 24px; /* Font size */
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background color */
+    padding: 20px;
+    width: 40%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out, bounce 2s infinite; /* Animation for appearance and bounce */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.box:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.photo-box {
+    background-color: rgba(255, 0, 0, 0.5); /* Red with transparency */
+}
+
+.video-box {
+    background-color: rgba(0, 0, 255, 0.5); /* Blue with transparency */
+}
+
+.photo-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.video-box video {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start invisible */
+        transform: translateY(20px); /* Start slightly lower */
+    }
+    to {
+        opacity: 1; /* End fully visible */
+        transform: translateY(0); /* End at original position */
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Original position */
+    }
+    40% {
+        transform: translateY(-10px); /* Bounce up */
+    }
+    60% {
+        transform: translateY(-5px); /* Bounce down */
+    }
+}

@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+body {
+    background-color: black; /* Dark background color */
+    background-image: url(image/photo-1579547621706-1a9c79d5c9f1.jpg);
+    background-size: cover; /* Cover the entire background */
+}
+
+.navbar {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center content */
+    align-items: center; /* Center items vertically */
+    background-color: #4CAF50; /* Background color of the nav bar */
+    padding: 20px 40px; /* Increased padding for larger nav bar */
+    font-family: Arial, sans-serif; /* Font family */
+    font-size: 24px; /* Increased font size */
+    font-weight: bold; /* Bold font */
+    color: white; /* Text color */
+}
+
+.box {
+    width: 300px; /* Set a width for the box */
+    padding: 20px; /* Add padding for inner content */
+    position: relative; /* Position relative for left positioning */
+    left: 20%; /* Position 20% from the left */
+    transform: translateX(-50%); /* Center the box horizontally */
+    text-align: center; /* Center text inside the box */
+    border-radius: 8px; /* Optional: rounded corners */
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background color */
+    color: white; /* Text color */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    animation: fadeIn 0.5s ease-in-out, bounce 2s infinite; /* Animation for appearance and bounce */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.box:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.box img {
+    max-width: 100%; /* Ensure images are responsive */
+    border-radius: 8px; /* Rounded corners for images */
+    margin-bottom: 10px; /* Space below images */
+    height: auto;
+    width: 280px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start invisible */
+        transform: translateY(20px); /* Start slightly lower */
+    }
+    to {
+        opacity: 1; /* End fully visible */
+        transform: translateY(0); /* End at original position */
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Original position */
+    }
+    40% {
+        transform: translateY(-0px); /* Bounce up */
+    }
+    60% {
+        transform: translateY(-0px); /* Bounce down */
+    }
+}
+
+.box1 {
+    position: relative;
+    left: 20%;
+    top: 75px;
+    background-color: rgba(255, 0, 0, 0.5); /* Red with transparency */
+}
+
+.box2 {
+    position: relative;
+    left: 60%;
+    top: -140px;
+    background-color: rgba(0, 255, 0, 0.5); /* Green with transparency */
+}
+
+.box3 {
+    position: relative;
+    left: 20%;
+    top: -75px;
+    background-color: rgba(0, 0, 255, 0.5); /* Blue with transparency */
+}
+
+.box4 {
+    position: relative;
+    left: 60%;
+    top: -290px;
+    background-color: rgba(255, 255, 0, 0.5); /* Yellow with transparency */
+}

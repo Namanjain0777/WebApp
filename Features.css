@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: #282c34; /* Dark background color */
+}
+
+#navbar {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center content */
+    align-items: center; /* Center items vertically */
+    background-color: #ffcc00; /* Bright background color for the nav bar */
+    padding: 20px 40px; /* Increased padding for larger nav bar */
+    font-family: Arial, sans-serif; /* Font family */
+    font-size: 24px; /* Increased font size */
+    font-weight: bold; /* Bold font */
+    color: black;
+}
+
+.box {
+    width: 500px; /* Set a width for the box */
+    height: 400px; /* Allow height to adjust based on content */
+    padding: 20px; /* Add padding for inner content */
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background color */
+    color: #fff; /* Text color */
+    position: relative; /* Position relative for left positioning */
+    left: -25%;
+    top: 58px;
+    margin: 20px auto; /* Center the boxes with margin */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    animation: fadeIn 0.5s ease-in-out; /* Animation for appearance */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.box1{
+    width: 500px; /* Set a width for the box */
+    height: 400px; /* Allow height to adjust based on content */
+    padding: 20px; /* Add padding for inner content */
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background color */
+    color: #fff; /* Text color */
+    position: relative; /* Position relative for left positioning */
+    left: 25%;
+    top: -400px;
+    margin: 20px auto; /* Center the boxes with margin */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    animation: fadeIn 0.5s ease-in-out; /* Animation for appearance */
+    transition: transform 0.3s; /* Smooth transition for hover effect */ 
+}
+
+.box:hover, .box1:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.box ul, .box1 ul {
+    list-style: none; /* Remove bullet points */
+}
+
+.box ul li h3, .box1 ul li h3 {
+    color: #ffcc00; /* Bright color for headings */
+    margin-bottom: 10px; /* Space below headings */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.box ul li:hover h3, .box1 ul li:hover h3 {
+    color: #feb47b; /* Change color on hover */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Start slightly lower */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at original position */
+    }
+}

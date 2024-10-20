@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webApp>
+    <appName>My Web Application</appName>
+    <version>1.0.0</version>
+    <description>This is a sample web application configuration.</description>
+    
+    <database>
+        <host>localhost</host>
+        <port>3306</port>
+        <username>dbUser </username>
+        <password>dbPassword</password>
+        <databaseName>myDatabase</databaseName>
+    </database>
+    
+    <api>
+        <baseUrl>https://api.example.com</baseUrl>
+        <timeout>30</timeout> <!-- Timeout in seconds -->
+    </api>
+    
+    <features>
+        <feature name="userAuthentication" enabled="true"/>
+        <feature name="dataAnalytics" enabled="false"/>
+        <feature name="notifications" enabled="true"/>
+    </features>
+</webApp>
